@@ -57,14 +57,14 @@ end)
 function openOpdrachtenMenu()
 	ESX.UI.Menu.Open( 'default', GetCurrentResourceName(), 'bekijkOpdrachten', -- Replace the menu name
 	  {
-		title    = ('Persoonlijke opdrachten'),
+		title    = _U('menuTitel'),
 		align = 'top', -- Menu position
 		elements = { -- Contains menu elements
-		  {label = ('Open opdrachten handboek'),     value = 'handboek'},
-		  {label = ('Bekijk de startersopdrachten'),     value = 'starters'},
-		  {label = ('Bekijk de gevorderde opdrachten'),      value = 'tweede'},
-		  {label = ('Bekijk de extra opdrachten'),      value = 'derde'},
-		  {label = ('Bekijk de tussendoor opdrachten'),      value = 'vierde'}
+		  {label = _U('openHandboek'),     value = 'handboek'},
+		  {label = _U('toonEerste'),     value = 'starters'},
+		  {label = _U('menuTweede'),      value = 'tweede'},
+		  {label = _U('menuDerde'),      value = 'derde'},
+		  {label = _U('menuVierde'),      value = 'vierde'}
 		}
 	  },
 	  function(data, menu) -- This part contains the code that executes when you press enter
@@ -77,7 +77,7 @@ function openOpdrachtenMenu()
 		if data.current.value == 'starters' then
 			ESX.TriggerServerCallback('esx_opdrachten:stuurStartersOpdrachten', function(opdrachten)
 				local elements = {
-				  head = { ('Nummer'), ('Opdracht'), ('Voltooid'), ('Informatie') },
+				  head = { _U('rijNummer'), _U('rijOpdracht'), _U('rijVoltooid'), _U('rijInformatie') },
 				  rows = {}
 				}
 
@@ -89,7 +89,7 @@ function openOpdrachtenMenu()
 						Config.AantalStartersOpdrachten[i],
 						Config.StartersOpdrachtenTitel[i],
 						Behaald[i],
-						'{{' .. ('Uitleg') .. '|knop1}} {{' .. ('Reset') .. '|knop2}}'
+						'{{' .. _U('rijUitlegKnop') .. '|knop1}} {{' .. _U('reset') .. '|knop2}}'
 					  }
 					})
 				end
@@ -111,7 +111,7 @@ function openOpdrachtenMenu()
 		if data.current.value == 'tweede' then
 			ESX.TriggerServerCallback('esx_opdrachten:stuurTweedeOpdrachten', function(opdrachten)
 				local elements = {
-				  head = { ('Nummer'), ('Opdracht'), ('Voltooid'), ('Informatie') },
+				  head = { _U('rijNummer'), _U('rijOpdracht'), _U('rijVoltooid'), _U('rijInformatie') },
 				  rows = {}
 				}
 
@@ -123,7 +123,7 @@ function openOpdrachtenMenu()
 						Config.AantalTweedeOpdrachten[i],
 						Config.TweedeOpdrachtenTitel[i],
 						Behaald[i],
-						'{{' .. ('Uitleg') .. '|knop1}} {{' .. ('Reset') .. '|knop2}}'
+						'{{' .. _U('rijUitlegKnop') .. '|knop1}} {{' .. _U('reset') .. '|knop2}}'
 					  }
 					})
 				end
@@ -145,7 +145,7 @@ function openOpdrachtenMenu()
 		if data.current.value == 'derde' then
 			ESX.TriggerServerCallback('esx_opdrachten:stuurDerdeOpdrachten', function(opdrachten)
 				local elements = {
-				  head = { ('Nummer'), ('Opdracht'), ('Voltooid'), ('Informatie') },
+				  head = { _U('rijNummer'), _U('rijOpdracht'), _U('rijVoltooid'), _U('rijInformatie') },
 				  rows = {}
 				}
 
@@ -157,7 +157,7 @@ function openOpdrachtenMenu()
 						Config.AantalDerdeOpdrachten[i],
 						Config.DerdeOpdrachtenTitel[i],
 						Behaald[i],
-						'{{' .. ('Uitleg') .. '|knop1}} {{' .. ('Reset') .. '|knop2}}'
+						'{{' .. _U('rijUitlegKnop') .. '|knop1}} {{' .. _U('reset') .. '|knop2}}'
 					  }
 					})
 				end
@@ -179,7 +179,7 @@ function openOpdrachtenMenu()
 		if data.current.value == 'vierde' then
 			ESX.TriggerServerCallback('esx_opdrachten:stuurVierdeOpdrachten', function(opdrachten)
 				local elements = {
-				  head = { ('Nummer'), ('Opdracht'), ('Voltooid'), ('Informatie') },
+				  head = { _U('rijNummer'), _U('rijOpdracht'), _U('rijVoltooid'), _U('rijInformatie') },
 				  rows = {}
 				}
 
@@ -191,7 +191,7 @@ function openOpdrachtenMenu()
 						Config.AantalVierdeOpdrachten[i],
 						Config.VierdeOpdrachtenTitel[i],
 						Behaald[i],
-						'{{' .. ('Uitleg') .. '|knop1}} {{' .. ('Reset') .. '|knop2}}'
+						'{{' .. _U('rijUitlegKnop') .. '|knop1}} {{' .. _U('reset') .. '|knop2}}'
 					  }
 					})
 				end
