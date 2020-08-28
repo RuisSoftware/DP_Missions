@@ -10,11 +10,7 @@ ui_page "ui/ui.html"
 files {
     "ui/ui.html",
     "ui/achtergrond.jpg",
-    "ui/fancy-crap.css",
-    "ui/fancy-crap.js",
-    "ui/jquery.min/js",
     "ui/opdrachten.html",
-    "ui/bootstrap.min.css",
 }
 
 client_script {
