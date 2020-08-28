@@ -9,14 +9,11 @@ ui_page "ui/ui.html"
 
 files {
     "ui/ui.html",
-    "ui/material-icons.ttf",
-    "ui/material-icons.css",
     "ui/achtergrond.jpg",
     "ui/fancy-crap.css",
     "ui/fancy-crap.js",
     "ui/jquery.min/js",
-    "ui/html/logo.png",
-    "ui/html/opdrachten.html",
+    "ui/opdrachten.html",
     "ui/bootstrap.min.css",
 }
 

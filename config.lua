@@ -1,15 +1,18 @@
-Config              = {}
-Config.Locale       = 'nl'
-Config.Toets        = 58
-Config.Prijs        = true
-Config.VoltooidNaam = 'Behaald'
-Config.NietVoltooidNaam = 'Niet behaald'
+Config              			= {}
+Config.Locale       			= 'nl'
+Config.Toets        			= 58
+Config.Prijs        			= true
+Config.PrijsStartersOpdrachten 	= 500
+Config.PrijsTweedeOpdrachten 	= 500
+Config.PrijsDerdeOpdrachten 	= 500
+Config.VoltooidNaam 			= 'Behaald' 
+Config.NietVoltooidNaam 		= 'Niet behaald'
 Config.AantalStartersOpdrachten = {'1:', '2:', '3:', '4:', '5:', '6:', '7:', '8:', '9:', '10:'}
 Config.AantalTweedeOpdrachten   = {'11:', '12:', '13:', '14:', '15:', '16:', '17:', '18:', '19:', '20:'}
-Config.AantalDerdeOpdrachten = {'21:', '22:', '23:', '24:', '25:', '26:', '27:', '28:', '29:', '30:'}
-Config.AantalVierdeOpdrachten = {'31:', '32:', '33:', '34:', '35:', '36:', '37:', '38:', '39:', '40:'}
+Config.AantalDerdeOpdrachten 	= {'21:', '22:', '23:', '24:', '25:', '26:', '27:', '28:', '29:', '30:'}
+Config.AantalVierdeOpdrachten 	= {'31:', '32:', '33:', '34:', '35:', '36:', '37:', '38:', '39:', '40:'}
 
-Config.StartersOpdrachtenTitel = {
+Config.StartersOpdrachtenTitel 	= {
 	'De wilde start', -- 
 	'Geen vraag te gek', -- ontdek de opdrachtenpanel
 	'Kies je carriere', -- baan zoekenee
@@ -23,7 +26,7 @@ Config.StartersOpdrachtenTitel = {
 	'Een gelukkig mens telt voor 2' -- gebruik een dildo
 }
 
-Config.TweedeOpdrachtenTitel = {
+Config.TweedeOpdrachtenTitel 	= {
 	'Ik ben het nieuws', -- Verstuur een advertentie
 	'Mysterieuze grond', -- Ga goud zoeken
 	'Verzamelwoede', -- Vind je eerste verzameling
@@ -36,7 +39,7 @@ Config.TweedeOpdrachtenTitel = {
 	'In het roze met stippen' -- Bezoek lscustom
 }
 
-Config.DerdeOpdrachtenTitel = {
+Config.DerdeOpdrachtenTitel 	= {
 	'Je eigen investering', -- Koop business
 	'Je eigen bedrijf', -- Koop een supermarkt, etc
 	'Je eigen woning', -- Koop een eigen woning
@@ -49,7 +52,7 @@ Config.DerdeOpdrachtenTitel = {
 	'Nieuwjaar' -- Steek vuurwerk af
 }
 
-Config.VierdeOpdrachtenTitel = {
+Config.VierdeOpdrachtenTitel 	= {
 	'Freelance piloot', -- Koop een vliegtuig
 	'Wel met een vaarbewijs', -- Koop een boot
 	'IF dave THEN delete;', -- Repareer een auto
@@ -63,7 +66,3 @@ Config.VierdeOpdrachtenTitel = {
 }
 
 -- Aantal KM gelopen/gereden
-
-Config.PrijsStartersOpdrachten = 500
-Config.PrijsTweedeOpdrachten = 500
-Config.PrijsDerdeOpdrachten = 500

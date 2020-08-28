@@ -1,6 +1,4 @@
-
-
-RegisterNetEvent('esx_opdrachten:updateOpdracht1') -- Opdracht 11 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht1')
+RegisterNetEvent('esx_opdrachten:updateOpdracht1') -- Opdracht 1 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht1')
 AddEventHandler('esx_opdrachten:updateOpdracht1', function()
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
@@ -20,7 +18,7 @@ AddEventHandler('esx_opdrachten:updateOpdracht1', function()
 	end
 end)
 
-RegisterNetEvent('esx_opdrachten:updateOpdracht2') -- Opdracht 12 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht2')
+RegisterNetEvent('esx_opdrachten:updateOpdracht2') -- Opdracht 2 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht2')
 AddEventHandler('esx_opdrachten:updateOpdracht2', function()
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
@@ -40,7 +38,7 @@ AddEventHandler('esx_opdrachten:updateOpdracht2', function()
 	end
 end)
 
-RegisterNetEvent('esx_opdrachten:updateOpdracht3') -- Opdracht 13 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht3')
+RegisterNetEvent('esx_opdrachten:updateOpdracht3') -- Opdracht 3 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht3')
 AddEventHandler('esx_opdrachten:updateOpdracht3', function()
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
@@ -60,7 +58,7 @@ AddEventHandler('esx_opdrachten:updateOpdracht3', function()
 	end
 end)
 
-RegisterNetEvent('esx_opdrachten:updateOpdracht4') -- Opdracht 14 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht4')
+RegisterNetEvent('esx_opdrachten:updateOpdracht4') -- Opdracht 4 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht4')
 AddEventHandler('esx_opdrachten:updateOpdracht4', function()
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
@@ -80,7 +78,7 @@ AddEventHandler('esx_opdrachten:updateOpdracht4', function()
 	end
 end)
 
-RegisterNetEvent('esx_opdrachten:updateOpdracht5') -- Opdracht 15 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht5')
+RegisterNetEvent('esx_opdrachten:updateOpdracht5') -- Opdracht 5 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht5')
 AddEventHandler('esx_opdrachten:updateOpdracht5', function()
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
@@ -100,8 +98,8 @@ AddEventHandler('esx_opdrachten:updateOpdracht5', function()
 	end
 end)
 
-RegisterNetEvent('esx_opdrachten:updateOpdracht6') -- Opdracht 16 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht6')
-AddEventHandler('esx_opdrachten:updateOpdracht3', function()
+RegisterNetEvent('esx_opdrachten:updateOpdracht6') -- Opdracht 6 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht6')
+AddEventHandler('esx_opdrachten:updateOpdracht6', function()
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
 	local result = MySQL.Sync.fetchAll('SELECT opdracht6 FROM opdrachten WHERE identifier = @eigenaar', {
@@ -120,7 +118,7 @@ AddEventHandler('esx_opdrachten:updateOpdracht3', function()
 	end
 end)
 
-RegisterNetEvent('esx_opdrachten:updateOpdracht7') -- Opdracht 17 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht7')
+RegisterNetEvent('esx_opdrachten:updateOpdracht7') -- Opdracht 7 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht7')
 AddEventHandler('esx_opdrachten:updateOpdracht7', function()
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
@@ -140,7 +138,7 @@ AddEventHandler('esx_opdrachten:updateOpdracht7', function()
 	end
 end)
 
-RegisterNetEvent('esx_opdrachten:updateOpdracht8') -- Opdracht 18 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht8')
+RegisterNetEvent('esx_opdrachten:updateOpdracht8') -- Opdracht 8 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht8')
 AddEventHandler('esx_opdrachten:updateOpdracht8', function()
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
@@ -160,7 +158,7 @@ AddEventHandler('esx_opdrachten:updateOpdracht8', function()
 	end
 end)
 
-RegisterNetEvent('esx_opdrachten:updateOpdracht9') -- Opdracht 19 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht9')
+RegisterNetEvent('esx_opdrachten:updateOpdracht9') -- Opdracht 9 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht9')
 AddEventHandler('esx_opdrachten:updateOpdracht9', function()
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
@@ -400,7 +398,7 @@ AddEventHandler('esx_opdrachten:updateOpdracht20', function()
 	end
 end)
 
-RegisterNetEvent('esx_opdrachten:updateOpdracht21') -- Opdracht2 11 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht21')
+RegisterNetEvent('esx_opdrachten:updateOpdracht21') -- Opdracht 21 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht21')
 AddEventHandler('esx_opdrachten:updateOpdracht21', function()
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
@@ -413,14 +411,14 @@ AddEventHandler('esx_opdrachten:updateOpdracht21', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht2 1 zojuist behaald!')
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 21 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
 		end
 	end
 end)
 
-RegisterNetEvent('esx_opdrachten:updateOpdracht22') -- Opdracht2 12 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht22')
+RegisterNetEvent('esx_opdrachten:updateOpdracht22') -- Opdracht 22 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht22')
 AddEventHandler('esx_opdrachten:updateOpdracht22', function()
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
@@ -433,14 +431,14 @@ AddEventHandler('esx_opdrachten:updateOpdracht22', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht2 2 zojuist behaald!')
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 22 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
 		end
 	end
 end)
 
-RegisterNetEvent('esx_opdrachten:updateOpdracht23') -- Opdracht2 13 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht23')
+RegisterNetEvent('esx_opdrachten:updateOpdracht23') -- Opdracht 23 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht23')
 AddEventHandler('esx_opdrachten:updateOpdracht23', function()
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
@@ -453,14 +451,14 @@ AddEventHandler('esx_opdrachten:updateOpdracht23', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht2 3 zojuist behaald!')
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 23 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
 		end
 	end
 end)
 
-RegisterNetEvent('esx_opdrachten:updateOpdracht24') -- Opdracht2 14 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht24')
+RegisterNetEvent('esx_opdrachten:updateOpdracht24') -- Opdracht 24 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht24')
 AddEventHandler('esx_opdrachten:updateOpdracht24', function()
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
@@ -473,14 +471,14 @@ AddEventHandler('esx_opdrachten:updateOpdracht24', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht2 4 zojuist behaald!')
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 24 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
 		end
 	end
 end)
 
-RegisterNetEvent('esx_opdrachten:updateOpdracht25') -- Opdracht2 15 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht25')
+RegisterNetEvent('esx_opdrachten:updateOpdracht25') -- Opdracht 25 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht25')
 AddEventHandler('esx_opdrachten:updateOpdracht25', function()
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
@@ -493,14 +491,14 @@ AddEventHandler('esx_opdrachten:updateOpdracht25', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht2 5 zojuist behaald!')
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 25 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
 		end
 	end
 end)
 
-RegisterNetEvent('esx_opdrachten:updateOpdracht26') -- Opdracht2 16 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht26')
+RegisterNetEvent('esx_opdrachten:updateOpdracht26') -- Opdracht 26 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht26')
 AddEventHandler('esx_opdrachten:updateOpdracht23', function()
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
@@ -513,14 +511,14 @@ AddEventHandler('esx_opdrachten:updateOpdracht23', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht2 6 zojuist behaald!')
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 26 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
 		end
 	end
 end)
 
-RegisterNetEvent('esx_opdrachten:updateOpdracht27') -- Opdracht2 17 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht27')
+RegisterNetEvent('esx_opdrachten:updateOpdracht27') -- Opdracht 27 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht27')
 AddEventHandler('esx_opdrachten:updateOpdracht27', function()
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
@@ -533,14 +531,14 @@ AddEventHandler('esx_opdrachten:updateOpdracht27', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht2 7 zojuist behaald!')
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 27 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
 		end
 	end
 end)
 
-RegisterNetEvent('esx_opdrachten:updateOpdracht28') -- Opdracht2 18 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht28')
+RegisterNetEvent('esx_opdrachten:updateOpdracht28') -- Opdracht 28 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht28')
 AddEventHandler('esx_opdrachten:updateOpdracht28', function()
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
@@ -553,14 +551,14 @@ AddEventHandler('esx_opdrachten:updateOpdracht28', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht2 8 zojuist behaald!')
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 28 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
 		end
 	end
 end)
 
-RegisterNetEvent('esx_opdrachten:updateOpdracht29') -- Opdracht2 19 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht29')
+RegisterNetEvent('esx_opdrachten:updateOpdracht29') -- Opdracht 29 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht29')
 AddEventHandler('esx_opdrachten:updateOpdracht29', function()
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
@@ -573,14 +571,14 @@ AddEventHandler('esx_opdrachten:updateOpdracht29', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht2 9 zojuist behaald!')
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 29 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
 		end
 	end
 end)
 
-RegisterNetEvent('esx_opdrachten:updateOpdracht30') -- Opdracht2 10 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht30')
+RegisterNetEvent('esx_opdrachten:updateOpdracht30') -- Opdracht 30 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht30')
 AddEventHandler('esx_opdrachten:updateOpdracht30', function()
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
@@ -593,14 +591,14 @@ AddEventHandler('esx_opdrachten:updateOpdracht30', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht30'] = voltooidOpdracht30
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht2 10 zojuist behaald!')
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 30 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
 		end
 	end
 end)
 
-RegisterNetEvent('esx_opdrachten:updateOpdracht31') -- Opdracht3 11 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht31')
+RegisterNetEvent('esx_opdrachten:updateOpdracht31') -- Opdracht 31 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht31')
 AddEventHandler('esx_opdrachten:updateOpdracht31', function()
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
@@ -613,14 +611,14 @@ AddEventHandler('esx_opdrachten:updateOpdracht31', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht3 1 zojuist behaald!')
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 31 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
 		end
 	end
 end)
 
-RegisterNetEvent('esx_opdrachten:updateOpdracht32') -- Opdracht3 12 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht32')
+RegisterNetEvent('esx_opdrachten:updateOpdracht32') -- Opdracht 32 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht32')
 AddEventHandler('esx_opdrachten:updateOpdracht32', function()
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
@@ -633,14 +631,14 @@ AddEventHandler('esx_opdrachten:updateOpdracht32', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht3 2 zojuist behaald!')
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 32 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
 		end
 	end
 end)
 
-RegisterNetEvent('esx_opdrachten:updateOpdracht33') -- Opdracht3 13 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht33')
+RegisterNetEvent('esx_opdrachten:updateOpdracht33') -- Opdracht 33 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht33')
 AddEventHandler('esx_opdrachten:updateOpdracht33', function()
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
@@ -653,14 +651,14 @@ AddEventHandler('esx_opdrachten:updateOpdracht33', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht3 3 zojuist behaald!')
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 33 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
 		end
 	end
 end)
 
-RegisterNetEvent('esx_opdrachten:updateOpdracht34') -- Opdracht3 14 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht34')
+RegisterNetEvent('esx_opdrachten:updateOpdracht34') -- Opdracht 34 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht34')
 AddEventHandler('esx_opdrachten:updateOpdracht34', function()
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
@@ -673,14 +671,14 @@ AddEventHandler('esx_opdrachten:updateOpdracht34', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht3 4 zojuist behaald!')
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 34 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
 		end
 	end
 end)
 
-RegisterNetEvent('esx_opdrachten:updateOpdracht35') -- Opdracht3 15 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht35')
+RegisterNetEvent('esx_opdrachten:updateOpdracht35') -- Opdracht 35 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht35')
 AddEventHandler('esx_opdrachten:updateOpdracht35', function()
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
@@ -693,14 +691,14 @@ AddEventHandler('esx_opdrachten:updateOpdracht35', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht3 5 zojuist behaald!')
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 35 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
 		end
 	end
 end)
 
-RegisterNetEvent('esx_opdrachten:updateOpdracht36') -- Opdracht3 16 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht36')
+RegisterNetEvent('esx_opdrachten:updateOpdracht36') -- Opdracht 36 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht36')
 AddEventHandler('esx_opdrachten:updateOpdracht33', function()
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
@@ -713,14 +711,14 @@ AddEventHandler('esx_opdrachten:updateOpdracht33', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht3 6 zojuist behaald!')
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 36 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
 		end
 	end
 end)
 
-RegisterNetEvent('esx_opdrachten:updateOpdracht37') -- Opdracht3 17 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht37')
+RegisterNetEvent('esx_opdrachten:updateOpdracht37') -- Opdracht 37 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht37')
 AddEventHandler('esx_opdrachten:updateOpdracht37', function()
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
@@ -733,14 +731,14 @@ AddEventHandler('esx_opdrachten:updateOpdracht37', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht3 7 zojuist behaald!')
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 37 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
 		end
 	end
 end)
 
-RegisterNetEvent('esx_opdrachten:updateOpdracht38') -- Opdracht3 18 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht38')
+RegisterNetEvent('esx_opdrachten:updateOpdracht38') -- Opdracht 38 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht38')
 AddEventHandler('esx_opdrachten:updateOpdracht38', function()
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
@@ -760,7 +758,7 @@ AddEventHandler('esx_opdrachten:updateOpdracht38', function()
 	end
 end)
 
-RegisterNetEvent('esx_opdrachten:updateOpdracht39') -- Opdracht3 19 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht39')
+RegisterNetEvent('esx_opdrachten:updateOpdracht39') -- Opdracht 39 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht39')
 AddEventHandler('esx_opdrachten:updateOpdracht39', function()
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
@@ -780,7 +778,7 @@ AddEventHandler('esx_opdrachten:updateOpdracht39', function()
 	end
 end)
 
-RegisterNetEvent('esx_opdrachten:updateOpdracht40') -- Opdracht3 10 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht40')
+RegisterNetEvent('esx_opdrachten:updateOpdracht40') -- Opdracht 40 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht40')
 AddEventHandler('esx_opdrachten:updateOpdracht40', function()
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
