@@ -22,8 +22,7 @@ Config.StartersOpdrachtenTitel 	= {
 	'Je eerste auto', -- auto kopen
 	'Nooit tekort', -- bezoek admin winkel
 	'Laat de vogels fluiten', -- verstuur een eerste tweet
-	'Toon je waarde', -- Sla voertuig op realparking
-	'Een gelukkig mens telt voor 2' -- gebruik een dildo
+	'Toon je waarde' -- Sla voertuig op realparking
 }
 
 Config.TweedeOpdrachtenTitel 	= {
@@ -41,7 +40,6 @@ Config.TweedeOpdrachtenTitel 	= {
 
 Config.DerdeOpdrachtenTitel 	= {
 	'Je eigen investering', -- Koop business
-	'Je eigen bedrijf', -- Koop een supermarkt, etc
 	'Je eigen woning', -- Koop een eigen woning
 	'Dit is niet illegaal, toch?', -- Gebruik een wietje
 	'Als het maar veilig gebeurt', -- Rij zelf sneller dan 300km/u
@@ -49,15 +47,16 @@ Config.DerdeOpdrachtenTitel 	= {
 	'Strike', -- Ga bowlen
 	'(18+) Kort maar krachtig', -- Bestel een hoer
 	'(18+) Handjes thuis', -- Bestel een lapdance
-	'Nieuwjaar' -- Steek vuurwerk af
+	'Nieuwjaar', -- Steek vuurwerk af
+	'Een gelukkig mens telt voor 2' -- gebruik een dildo
 }
 
 Config.VierdeOpdrachtenTitel 	= {
 	'Freelance piloot', -- Koop een vliegtuig
 	'Wel met een vaarbewijs', -- Koop een boot
-	'IF dave THEN delete;', -- Repareer een auto
-	'IF dave THEN delete;', 
-	'IF dave THEN delete;', 
+	'Je eigen bedrijf', -- Koop een supermarkt, etc
+	'Of even Apeldoorn bellen', -- Repareer een auto
+	'Het is mooier van boven', -- Bezoek blokkenpark toren 
 	'IF dave THEN delete;', 
 	'IF dave THEN delete;', 
 	'IF dave THEN delete;', 
