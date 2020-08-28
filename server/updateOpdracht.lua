@@ -79,7 +79,7 @@ AddEventHandler('esx_opdrachten:updateOpdracht4', function()
 end)
 
 RegisterNetEvent('esx_opdrachten:updateOpdracht5') -- Opdracht 5 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht5')
-AddEventHandler('esx_opdrachten:updateOpdracht5', function()
+AddEventHandler('esx_opdrachten:updateOpdracht5', function(source)
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
 	local result = MySQL.Sync.fetchAll('SELECT opdracht5 FROM opdrachten WHERE identifier = @eigenaar', {
@@ -99,7 +99,7 @@ AddEventHandler('esx_opdrachten:updateOpdracht5', function()
 end)
 
 RegisterNetEvent('esx_opdrachten:updateOpdracht6') -- Opdracht 6 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht6')
-AddEventHandler('esx_opdrachten:updateOpdracht6', function()
+AddEventHandler('esx_opdrachten:updateOpdracht6', function(source)
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
 	local result = MySQL.Sync.fetchAll('SELECT opdracht6 FROM opdrachten WHERE identifier = @eigenaar', {
@@ -119,7 +119,7 @@ AddEventHandler('esx_opdrachten:updateOpdracht6', function()
 end)
 
 RegisterNetEvent('esx_opdrachten:updateOpdracht7') -- Opdracht 7 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht7')
-AddEventHandler('esx_opdrachten:updateOpdracht7', function()
+AddEventHandler('esx_opdrachten:updateOpdracht7', function(source)
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
 	local result = MySQL.Sync.fetchAll('SELECT opdracht7 FROM opdrachten WHERE identifier = @eigenaar', {
@@ -139,7 +139,7 @@ AddEventHandler('esx_opdrachten:updateOpdracht7', function()
 end)
 
 RegisterNetEvent('esx_opdrachten:updateOpdracht8') -- Opdracht 8 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht8')
-AddEventHandler('esx_opdrachten:updateOpdracht8', function()
+AddEventHandler('esx_opdrachten:updateOpdracht8', function(source)
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
 	local result = MySQL.Sync.fetchAll('SELECT opdracht8 FROM opdrachten WHERE identifier = @eigenaar', {
@@ -159,7 +159,7 @@ AddEventHandler('esx_opdrachten:updateOpdracht8', function()
 end)
 
 RegisterNetEvent('esx_opdrachten:updateOpdracht9') -- Opdracht 9 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht9')
-AddEventHandler('esx_opdrachten:updateOpdracht9', function()
+AddEventHandler('esx_opdrachten:updateOpdracht9', function(source)
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
 	local result = MySQL.Sync.fetchAll('SELECT opdracht9 FROM opdrachten WHERE identifier = @eigenaar', {
@@ -179,7 +179,7 @@ AddEventHandler('esx_opdrachten:updateOpdracht9', function()
 end)
 
 RegisterNetEvent('esx_opdrachten:updateOpdracht10') -- Opdracht 10 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht10')
-AddEventHandler('esx_opdrachten:updateOpdracht10', function()
+AddEventHandler('esx_opdrachten:updateOpdracht10', function(source)
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
 	local result = MySQL.Sync.fetchAll('SELECT opdracht10 FROM opdrachten WHERE identifier = @eigenaar', {
@@ -299,7 +299,7 @@ AddEventHandler('esx_opdrachten:updateOpdracht15', function()
 end)
 
 RegisterNetEvent('esx_opdrachten:updateOpdracht16') -- Opdracht 16 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht16')
-AddEventHandler('esx_opdrachten:updateOpdracht3', function()
+AddEventHandler('esx_opdrachten:updateOpdracht16', function()
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
 	local result = MySQL.Sync.fetchAll('SELECT opdracht16 FROM opdrachten WHERE identifier = @eigenaar', {
@@ -499,7 +499,7 @@ AddEventHandler('esx_opdrachten:updateOpdracht25', function()
 end)
 
 RegisterNetEvent('esx_opdrachten:updateOpdracht26') -- Opdracht 26 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht26')
-AddEventHandler('esx_opdrachten:updateOpdracht23', function()
+AddEventHandler('esx_opdrachten:updateOpdracht26', function()
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
 	local result = MySQL.Sync.fetchAll('SELECT opdracht26 FROM opdrachten WHERE identifier = @eigenaar', {
@@ -699,7 +699,7 @@ AddEventHandler('esx_opdrachten:updateOpdracht35', function()
 end)
 
 RegisterNetEvent('esx_opdrachten:updateOpdracht36') -- Opdracht 36 is klaar. TriggerServerEvent('esx_opdrachten:updateOpdracht36')
-AddEventHandler('esx_opdrachten:updateOpdracht33', function()
+AddEventHandler('esx_opdrachten:updateOpdracht36', function()
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
 	local result = MySQL.Sync.fetchAll('SELECT opdracht36 FROM opdrachten WHERE identifier = @eigenaar', {

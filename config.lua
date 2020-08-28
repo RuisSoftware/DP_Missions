@@ -15,7 +15,7 @@ Config.AantalVierdeOpdrachten 	= {'31:', '32:', '33:', '34:', '35:', '36:', '37:
 Config.StartersOpdrachtenTitel 	= {
 	'De wilde start', -- 
 	'Geen vraag te gek', -- ontdek de opdrachtenpanel
-	'Kies je carriere', -- baan zoekenee
+	'Kies je carriere', -- baan zoeken
 	'Nooit geld tekort', -- bijbaan zoeken
 	'Briefgeld is slechts een belofte', -- geld pinnen
 	'Veilig rijden', -- rijbewijs halen
