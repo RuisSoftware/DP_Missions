@@ -1,6 +1,6 @@
 ESX              = nil
-local tabEnabled = false
-local tabLoaded  = true
+local panelIngeschakeld = false
+local panelLoaded  = true
 local PlayerData = {}
 
 Citizen.CreateThread(function()
@@ -38,11 +38,9 @@ AddEventHandler('esx:onPlayerSpawn', function(spawn)
 	TriggerServerEvent('esx_opdrachten:spelerBezoekt')
 end)
 
-RegisterNUICallback("sluitPanel", function(data2)    
-	if data2.hide then
-		print("Hiding the tablet")
+RegisterNUICallback("sluitPanel", function(panel)    
+	if panel.verberg then
 		SetNuiFocus(false, false)
-		tabEnabled = false
 	end      
 end)
 
@@ -71,9 +69,9 @@ function openOpdrachtenMenu()
 	  },
 	  function(data, menu) -- This part contains the code that executes when you press enter
 		if data.current.value == 'handboek' then
-			SendNUIMessage({showtab = true})
+			SendNUIMessage({panelTonen = true})
 			SetNuiFocus(true, true)
-			tabLoaded = true 
+			panelLoaded = true 
 			menu.close()
 		end   
 		if data.current.value == 'starters' then
@@ -99,9 +97,8 @@ function openOpdrachtenMenu()
 				ESX.UI.Menu.Open('list', GetCurrentResourceName(), 'alleOpdrachten', elements, function(data, menu)
 				  if data.value == 'knop1' then
 						menu.close()
-						SendNUIMessage({showtab = true})
+						SendNUIMessage({panelTonen = true})
 						SetNuiFocus(true, true)
-						tabLoaded = true 
 						ESX.UI.Menu.Close('default', GetCurrentResourceName(), 'bekijkOpdrachten')
 				  elseif data.value == 'knop2' then
 					-- Code 2
@@ -134,9 +131,8 @@ function openOpdrachtenMenu()
 				ESX.UI.Menu.Open('list', GetCurrentResourceName(), 'alleOpdrachten', elements, function(data, menu)
 				  if data.value == 'knop1' then
 						menu.close()
-						SendNUIMessage({showtab = true})
+						SendNUIMessage({panelTonen = true})
 						SetNuiFocus(true, true)
-						tabLoaded = true 
 						ESX.UI.Menu.Close('default', GetCurrentResourceName(), 'bekijkOpdrachten')
 				  elseif data.value == 'knop2' then
 					-- Code 2
@@ -169,9 +165,8 @@ function openOpdrachtenMenu()
 				ESX.UI.Menu.Open('list', GetCurrentResourceName(), 'alleOpdrachten', elements, function(data, menu)
 				  if data.value == 'knop1' then
 						menu.close()
-						SendNUIMessage({showtab = true})
+						SendNUIMessage({panelTonen = true})
 						SetNuiFocus(true, true)
-						tabLoaded = true 
 						ESX.UI.Menu.Close('default', GetCurrentResourceName(), 'bekijkOpdrachten')
 				  elseif data.value == 'knop2' then
 					-- Code 2
@@ -204,9 +199,8 @@ function openOpdrachtenMenu()
 				ESX.UI.Menu.Open('list', GetCurrentResourceName(), 'alleOpdrachten', elements, function(data, menu)
 				  if data.value == 'knop1' then
 						menu.close()
-						SendNUIMessage({showtab = true})
+						SendNUIMessage({panelTonen = true})
 						SetNuiFocus(true, true)
-						tabLoaded = true 
 						ESX.UI.Menu.Close('default', GetCurrentResourceName(), 'bekijkOpdrachten')
 				  elseif data.value == 'knop2' then
 					-- Code 2

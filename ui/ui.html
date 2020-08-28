@@ -39,7 +39,7 @@
             display: none;
         }
         
-        #iframe:not(.empty) ~ .tab-content {
+        #iframe:not(.empty) ~ .panel-content {
             display:none;
         }
 
@@ -53,14 +53,14 @@
         }     
 
 
-        #tab-container {
+        #panel-container {
             display: flex;
             flex: 1;
             top: 20px;
         }
 
-        .tab {
-            background: url('loadscreen.jpg');
+        .panel {
+            background: url('achtergrond.jpg');
             background-size: 100% 100%;
             position: relative;
             min-height:100%;
@@ -68,7 +68,7 @@
             flex-direction: column;
         }
 
-        .tab-wrap {
+        .panel-wrap {
             position: relative;
             background: black;
             width: 100%;
@@ -83,7 +83,7 @@
             flex-direction: column;
         }
 
-        .tab-wrap .dot {
+        .panel-wrap .dot {
             position: absolute;
             width: 30px;
             height: 15px;
@@ -94,11 +94,11 @@
             align-self: center;
         }
 
-        .tab-wrap .dot:hover {
+        .panel-wrap .dot:hover {
             background: whitesmoke;
         }
 
-        .tab-wrap .tab {
+        .panel-wrap .panel {
             padding: 0;
             overflow:hidden;
         }
@@ -243,17 +243,17 @@
         }
     }
     </script>
-    <div id="tab-container">
-        <div class="tab-wrap">
+    <div id="panel-container">
+        <div class="panel-wrap">
             <span class="dot"></span>
-            <div class="tab">
+            <div class="panel">
                 <iframe id="iframe" class="empty" src="about:blank" onload="HandleLocationChange(this, this.contentWindow.location.href)" ></iframe>
                 
                 <div class="placeholder"></div>
-                <footer class="tab-content">
+                <footer class="panel-content">
                     <ul>
                         <li data-title="Uitzendbureau">
-                            <a class="nav-myframe" href="html/jobsfordummies.html">
+                            <a class="nav-myframe" href="html/opdrachten.html">
                                 <i class="myicon material-icons">school</i>
                             </a>
                         </li>
@@ -267,14 +267,14 @@
         // When the document is ready
         $(document).ready(function () {
             var iframe = $("#iframe")[0];
-            var $tabContainer = $("#tab-container");
+            var $panelContainer = $("#panel-container");
 
             // Show or hide the page
             function SHOW_HIDE(bool) {
                 if (bool) {
-                    $tabContainer.show();
+                    $panelContainer.show();
                 } else {
-                    $tabContainer.hide();
+                    $panelContainer.hide();
                     window.blur() // unfocus the window
                 }
             }
@@ -284,10 +284,10 @@
             // Listens for NUI messages from Lua 
             window.addEventListener('message', function (event) {
                 var item = event.data;
-                if (item.showtab) {
+                if (item.panelTonen) {
                     SHOW_HIDE(true)
                 } // lua requested show
-                else if (item.hidetab) {
+                else if (item.hidepanel) {
                     SHOW_HIDE()
                 } // lua requested hide
             });
@@ -297,17 +297,17 @@
                 if (data.which == 27) {
                     SHOW_HIDE(); // hide ui
                     $.post("https://esx_opdrachten/sluitPanel", JSON.stringify({
-                        hide: true
+                        verberg: true
                     })) // tell lua to unfocus
                 }
             });
 
             // When clicked the dot
-            $('.tab-wrap .dot').click(function () {
+            $('.panel-wrap .dot').click(function () {
                 if (iframe.src == 'about:blank') {
                     SHOW_HIDE(); // hide ui
                     $.post("https://esx_opdrachten/sluitPanel", JSON.stringify({
-                        hide: true
+                        verberg: true
                     })) // tell lua to unfocus
                 } else {
                     iframe.src = 'about:blank'; // trigger HandleLocationChange
@@ -329,11 +329,6 @@
 
                 return false;
             });
-
-            // Tell lua the nui loaded
-            $.post("https://esx_opdrachten/sluitPanel", JSON.stringify({
-                load: true
-            }))
         });
     </script>
 </body>

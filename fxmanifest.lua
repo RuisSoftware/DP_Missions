@@ -5,48 +5,36 @@ author 'Dutch Players'
 description 'Texel RP Opdrachten'
 version '1.0'
 
-ui_page "nui/ui.html"
+ui_page "ui/ui.html"
 
 files {
-    "nui/ui.html",
-    "nui/material-icons.ttf",
-    "nui/material-icons.css",
-    "nui/loadscreen.jpg",
-    "nui/fancy-crap.css",
-    "nui/fancy-crap.js",
-    "nui/jquery.min/js",
-    "nui/html/news.html",
-    "nui/html/logo.png",
-    "nui/html/laws.html",
-    "nui/html/hotties.html",
-    "nui/html/youtube.html",
-    "nui/html/spotify.html",
-    "nui/html/snake.html",
-    "nui/html/fuckyouitsdope.png",
-    "nui/html/jobsfordummies.html",
-    "nui/html/rulesforassholes.html",
-    "nui/bootstrap.min.css",
-    "nui/html/fivemcad.html",
-    "nui/html/opencad.html",
-    "nui/html/dekerk.html",
-    "nui/html/kvk.html",
-    "nui/html/omroep.html"
+    "ui/ui.html",
+    "ui/material-icons.ttf",
+    "ui/material-icons.css",
+    "ui/achtergrond.jpg",
+    "ui/fancy-crap.css",
+    "ui/fancy-crap.js",
+    "ui/jquery.min/js",
+    "ui/html/logo.png",
+    "ui/html/opdrachten.html",
+    "ui/bootstrap.min.css",
 }
 
 client_script {
     '@es_extended/locale.lua',
     'locales/nl.lua',
+	
 	"config.lua",
 	"client/algemeen.lua",
 }
 
 server_script {
+	'@mysql-async/lib/MySQL.lua',
     '@es_extended/locale.lua',
     'locales/nl.lua',
-	'@mysql-async/lib/MySQL.lua',
+	
 	"config.lua",
 	"server/algemeen.lua",
 	"server/updateOpdracht.lua",
 	"server/nieuweSpeler.lua",
-	
 }

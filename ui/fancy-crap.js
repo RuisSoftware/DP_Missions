@@ -102,7 +102,7 @@
             content: null,
             title: null,
             tpl: {
-                wrap: '<div class="fancybox-wrap" tabIndex="-1"><div class="fancybox-skin"><div class="fancybox-outer"><div class="fancybox-inner"></div></div></div></div>',
+                wrap: '<div class="fancybox-wrap" panelIndex="-1"><div class="fancybox-skin"><div class="fancybox-outer"><div class="fancybox-inner"></div></div></div></div>',
                 image: '<img class="fancybox-image" src="{href}" alt="" />',
                 iframe: '<iframe id="fancybox-frame{rnd}" name="fancybox-frame{rnd}" class="fancybox-iframe" frameborder="0" vspace="0" hspace="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen' +
                     (I ? ' allowtransparency="true"' : "") + "></iframe>",
