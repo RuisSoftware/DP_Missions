@@ -145,7 +145,6 @@ AddEventHandler('esx_opdrachten:updateOpdracht7', function(source)
 		})
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
-		else
 			TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 7 zojuist behaald en ' .. Config.PrijsStartersOpdrachten .. ' gekregen!')
 		else
 			TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 7 zojuist behaald!')

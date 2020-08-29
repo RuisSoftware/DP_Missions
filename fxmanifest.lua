@@ -11,6 +11,8 @@ files {
 	'ui/ui.html',
 	'ui/achtergrond.jpg',
 	'ui/opdrachten.html',
+	'ui/ui.css',
+	'ui/opdrachten.css',
 }
 
 client_script {

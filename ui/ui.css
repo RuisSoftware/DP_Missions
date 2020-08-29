@@ -72,7 +72,7 @@ body {
 	flex-direction: column;
 }
 
-.panel-wrap .dot {
+.panel-wrap .terug {
 	position: absolute;
 	width: 30px;
 	height: 30px;
@@ -84,7 +84,7 @@ body {
 	align-self: center;
 }
 
-.panel-wrap .dot:hover {
+.panel-wrap .terug:hover {
 	background: whitesmoke;
 }
 
