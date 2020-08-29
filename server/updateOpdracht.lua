@@ -11,9 +11,11 @@ AddEventHandler('esx_opdrachten:updateOpdracht1', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 1 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
+			TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 1 zojuist behaald en ' .. Config.PrijsStartersOpdrachten .. ' gekregen!')
+		else
+			TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 1 zojuist behaald!')
 		end
 	end
 end)
@@ -31,9 +33,11 @@ AddEventHandler('esx_opdrachten:updateOpdracht2', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 2 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
+			TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 2 zojuist behaald en ' .. Config.PrijsStartersOpdrachten .. ' gekregen!')
+		else
+			TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 2 zojuist behaald!')
 		end
 	end
 end)
@@ -51,9 +55,11 @@ AddEventHandler('esx_opdrachten:updateOpdracht3', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 3 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
+			TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 3 zojuist behaald en ' .. Config.PrijsStartersOpdrachten .. ' gekregen!')
+		else
+			TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 3 zojuist behaald!')
 		end
 	end
 end)
@@ -71,9 +77,11 @@ AddEventHandler('esx_opdrachten:updateOpdracht4', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 4 zojuist behaald!')
 		if Config.Prijs == true then
+			TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 4 zojuist behaald en ' .. Config.PrijsStartersOpdrachten .. ' gekregen!')
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
+		else
+			TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 4 zojuist behaald!')
 		end
 	end
 end)
@@ -91,9 +99,11 @@ AddEventHandler('esx_opdrachten:updateOpdracht5', function(source)
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 5 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
+			TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 5 zojuist behaald en ' .. Config.PrijsStartersOpdrachten .. ' gekregen!')
+		else
+			TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 5 zojuist behaald!')
 		end
 	end
 end)
@@ -111,9 +121,11 @@ AddEventHandler('esx_opdrachten:updateOpdracht6', function(source)
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 6 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
+			TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 6 zojuist behaald en ' .. Config.PrijsStartersOpdrachten .. ' gekregen!')
+		else
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 6 zojuist behaald!')
 		end
 	end
 end)
@@ -131,9 +143,12 @@ AddEventHandler('esx_opdrachten:updateOpdracht7', function(source)
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 7 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
+		else
+			TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 7 zojuist behaald en ' .. Config.PrijsStartersOpdrachten .. ' gekregen!')
+		else
+			TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 7 zojuist behaald!')
 		end
 	end
 end)
@@ -151,9 +166,11 @@ AddEventHandler('esx_opdrachten:updateOpdracht8', function(source)
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 8 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 8 zojuist behaald en ' .. Config.PrijsStartersOpdrachten .. ' gekregen!')
+		else
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 8 zojuist behaald!')
 		end
 	end
 end)
@@ -171,9 +188,11 @@ AddEventHandler('esx_opdrachten:updateOpdracht9', function(source)
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 9 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 9 zojuist behaald en ' .. Config.PrijsStartersOpdrachten .. ' gekregen!')
+		else
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 9 zojuist behaald!')
 		end
 	end
 end)
@@ -191,9 +210,11 @@ AddEventHandler('esx_opdrachten:updateOpdracht10', function(source)
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 10 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 10 zojuist behaald en ' .. Config.PrijsStartersOpdrachten .. ' gekregen!')
+		else
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 10 zojuist behaald!')
 		end
 	end
 end)
@@ -211,9 +232,11 @@ AddEventHandler('esx_opdrachten:updateOpdracht11', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 11 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 11 zojuist behaald en ' .. Config.PrijsStartersOpdrachten .. ' gekregen!')
+		else
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 11 zojuist behaald!')
 		end
 	end
 end)
@@ -231,9 +254,11 @@ AddEventHandler('esx_opdrachten:updateOpdracht12', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 12 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 12 zojuist behaald en ' .. Config.PrijsStartersOpdrachten .. ' gekregen!')
+		else
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 12 zojuist behaald!')
 		end
 	end
 end)
@@ -251,9 +276,11 @@ AddEventHandler('esx_opdrachten:updateOpdracht13', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 13 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 13 zojuist behaald en ' .. Config.PrijsStartersOpdrachten .. ' gekregen!')
+		else
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 13 zojuist behaald!')
 		end
 	end
 end)
@@ -271,9 +298,11 @@ AddEventHandler('esx_opdrachten:updateOpdracht14', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 14 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 14 zojuist behaald en ' .. Config.PrijsStartersOpdrachten .. ' gekregen!')
+		else
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 14 zojuist behaald!')
 		end
 	end
 end)
@@ -291,9 +320,11 @@ AddEventHandler('esx_opdrachten:updateOpdracht15', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 15 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 15 zojuist behaald en ' .. Config.PrijsStartersOpdrachten .. ' gekregen!')
+		else
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 15 zojuist behaald!')
 		end
 	end
 end)
@@ -311,9 +342,11 @@ AddEventHandler('esx_opdrachten:updateOpdracht16', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 16 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 16 zojuist behaald en ' .. Config.PrijsStartersOpdrachten .. ' gekregen!')
+		else
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 16 zojuist behaald!')
 		end
 	end
 end)
@@ -331,9 +364,11 @@ AddEventHandler('esx_opdrachten:updateOpdracht17', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 17 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 17 zojuist behaald en ' .. Config.PrijsStartersOpdrachten .. ' gekregen!')
+		else
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 17 zojuist behaald!')
 		end
 	end
 end)
@@ -351,9 +386,11 @@ AddEventHandler('esx_opdrachten:updateOpdracht18', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 18 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 18 zojuist behaald en ' .. Config.PrijsStartersOpdrachten .. ' gekregen!')
+		else
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 18 zojuist behaald!')
 		end
 	end
 end)
@@ -371,9 +408,11 @@ AddEventHandler('esx_opdrachten:updateOpdracht19', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 19 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 19 zojuist behaald en ' .. Config.PrijsStartersOpdrachten .. ' gekregen!')
+		else
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 19 zojuist behaald!')
 		end
 	end
 end)
@@ -391,9 +430,11 @@ AddEventHandler('esx_opdrachten:updateOpdracht20', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 20 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 20 zojuist behaald en ' .. Config.PrijsStartersOpdrachten .. ' gekregen!')
+		else
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 20 zojuist behaald!')
 		end
 	end
 end)
@@ -411,9 +452,11 @@ AddEventHandler('esx_opdrachten:updateOpdracht21', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 21 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 21 zojuist behaald en ' .. Config.PrijsStartersOpdrachten .. ' gekregen!')
+		else
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 21 zojuist behaald!')
 		end
 	end
 end)
@@ -431,9 +474,11 @@ AddEventHandler('esx_opdrachten:updateOpdracht22', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 22 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 22 zojuist behaald en ' .. Config.PrijsStartersOpdrachten .. ' gekregen!')
+		else
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 22 zojuist behaald!')
 		end
 	end
 end)
@@ -451,9 +496,11 @@ AddEventHandler('esx_opdrachten:updateOpdracht23', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 23 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 23 zojuist behaald en ' .. Config.PrijsStartersOpdrachten .. ' gekregen!')
+		else
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 23 zojuist behaald!')
 		end
 	end
 end)
@@ -471,9 +518,11 @@ AddEventHandler('esx_opdrachten:updateOpdracht24', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 24 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 24 zojuist behaald en ' .. Config.PrijsStartersOpdrachten .. ' gekregen!')
+		else
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 24 zojuist behaald!')
 		end
 	end
 end)
@@ -491,9 +540,11 @@ AddEventHandler('esx_opdrachten:updateOpdracht25', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 25 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 25 zojuist behaald en ' .. Config.PrijsStartersOpdrachten .. ' gekregen!')
+		else
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 25 zojuist behaald!')
 		end
 	end
 end)
@@ -511,9 +562,11 @@ AddEventHandler('esx_opdrachten:updateOpdracht26', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 26 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 26 zojuist behaald en ' .. Config.PrijsStartersOpdrachten .. ' gekregen!')
+		else
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 26 zojuist behaald!')
 		end
 	end
 end)
@@ -531,9 +584,11 @@ AddEventHandler('esx_opdrachten:updateOpdracht27', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 27 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 27 zojuist behaald en ' .. Config.PrijsStartersOpdrachten .. ' gekregen!')
+		else
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 27 zojuist behaald!')
 		end
 	end
 end)
@@ -551,9 +606,11 @@ AddEventHandler('esx_opdrachten:updateOpdracht28', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 28 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 28 zojuist behaald en ' .. Config.PrijsStartersOpdrachten .. ' gekregen!')
+		else
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 28 zojuist behaald!')
 		end
 	end
 end)
@@ -571,9 +628,11 @@ AddEventHandler('esx_opdrachten:updateOpdracht29', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 29 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 29 zojuist behaald en ' .. Config.PrijsStartersOpdrachten .. ' gekregen!')
+		else
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 29 zojuist behaald!')
 		end
 	end
 end)
@@ -591,9 +650,11 @@ AddEventHandler('esx_opdrachten:updateOpdracht30', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht30'] = voltooidOpdracht30
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 30 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 30 zojuist behaald en ' .. Config.PrijsStartersOpdrachten .. ' gekregen!')
+		else
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 30 zojuist behaald!')
 		end
 	end
 end)
@@ -611,9 +672,11 @@ AddEventHandler('esx_opdrachten:updateOpdracht31', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 31 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 31 zojuist behaald en ' .. Config.PrijsStartersOpdrachten .. ' gekregen!')
+		else
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 31 zojuist behaald!')
 		end
 	end
 end)
@@ -631,9 +694,11 @@ AddEventHandler('esx_opdrachten:updateOpdracht32', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 32 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 32 zojuist behaald en ' .. Config.PrijsStartersOpdrachten .. ' gekregen!')
+		else
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 32 zojuist behaald!')
 		end
 	end
 end)
@@ -651,9 +716,11 @@ AddEventHandler('esx_opdrachten:updateOpdracht33', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 33 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 33 zojuist behaald en ' .. Config.PrijsStartersOpdrachten .. ' gekregen!')
+		else
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 33 zojuist behaald!')
 		end
 	end
 end)
@@ -671,9 +738,11 @@ AddEventHandler('esx_opdrachten:updateOpdracht34', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 34 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 34 zojuist behaald en ' .. Config.PrijsStartersOpdrachten .. ' gekregen!')
+		else
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 34 zojuist behaald!')
 		end
 	end
 end)
@@ -691,9 +760,11 @@ AddEventHandler('esx_opdrachten:updateOpdracht35', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 35 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 35 zojuist behaald en ' .. Config.PrijsStartersOpdrachten .. ' gekregen!')
+		else
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 35 zojuist behaald!')
 		end
 	end
 end)
@@ -711,9 +782,11 @@ AddEventHandler('esx_opdrachten:updateOpdracht36', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 36 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 36 zojuist behaald en ' .. Config.PrijsStartersOpdrachten .. ' gekregen!')
+		else
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 36 zojuist behaald!')
 		end
 	end
 end)
@@ -731,9 +804,11 @@ AddEventHandler('esx_opdrachten:updateOpdracht37', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 37 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 37 zojuist behaald en ' .. Config.PrijsStartersOpdrachten .. ' gekregen!')
+		else
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 37 zojuist behaald!')
 		end
 	end
 end)
@@ -751,9 +826,11 @@ AddEventHandler('esx_opdrachten:updateOpdracht38', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 38 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 38 zojuist behaald en ' .. Config.PrijsStartersOpdrachten .. ' gekregen!')
+		else
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 38 zojuist behaald!')
 		end
 	end
 end)
@@ -771,9 +848,11 @@ AddEventHandler('esx_opdrachten:updateOpdracht39', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 39 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 39 zojuist behaald en ' .. Config.PrijsStartersOpdrachten .. ' gekregen!')
+		else
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 39 zojuist behaald!')
 		end
 	end
 end)
@@ -791,9 +870,11 @@ AddEventHandler('esx_opdrachten:updateOpdracht40', function()
 			['@eigenaar'] = xPlayer.identifier,
 			['@voltooidOpdracht'] = voltooidOpdracht
 		})
-		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 40 zojuist behaald!')
 		if Config.Prijs == true then
 			xPlayer.addAccountMoney('bank', Config.PrijsStartersOpdrachten)
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 40 zojuist behaald en ' .. Config.PrijsStartersOpdrachten .. ' gekregen!')
+		else
+		TriggerClientEvent('esx:showNotification', _source, 'Je hebt opdracht 40 zojuist behaald!')
 		end
 	end
 end)
