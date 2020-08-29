@@ -3,12 +3,6 @@
 
 <head>
   <style>
-    @import url(https://fonts.googleapis.com/css?family=Ruluko);
-    @import url(http://weloveiconfonts.com/api/?family=fontawesome);
-
-    [class*="fontawesome-"]:before {
-      font-family: 'FontAwesome', sans-serif;
-    }
 
     * {
       font-size: 100%;
@@ -26,7 +20,7 @@
     }
 
     body {
-      font-family: 'Ruluko', sans-serif;
+      font-family: Consolas,monaco,monospace;
       font-size: 16px;
       width: 100%;
       margin: 0 auto;
@@ -108,7 +102,7 @@
 
     main .sidebar {
       background: #323233;
-      min-width: 180px;
+      min-width: 200px;
       max-width: 200px;
       margin-bottom: 0;
       border-right: .5rem solid #81A4D4;
@@ -122,13 +116,14 @@
       text-align: center;
       margin: 0;
       padding: 1.2rem;
+      font-size: 1.2em;
       background: #323233;
       color: #A6A5A4;
       border-bottom: 2px solid #2F2F2F;
     }
 
     main .sidebar h2:after {
-      content: "The SideBar";
+      content: "";
     }
 
     main .sidebar ul {
@@ -143,12 +138,14 @@
       flex: 1 1 auto;
       display: block;
       margin: 0;
-      padding: 0;
+      padding: 0 0 0 -10px;
       border-bottom: 2px solid #2F2F2F;
+		margin-left:-40px;
+
     }
 
     main .sidebar li:hover {
-      box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.5);
     }
 
     main .sidebar a {
@@ -195,7 +192,7 @@
     }
 
     main .sidebar h2:after {
-      content: "The TopBar";
+      content: "";
       padding-left: .5rem;
     }
 
@@ -233,6 +230,12 @@
     #all-content {
       flex: 1;
     }
+    #all-content h1 {
+      margin-left:10px;
+    }
+    #all-content p {
+      margin-left:10px;
+    }
 
     .info {
       background-color: #294860;
@@ -243,9 +246,7 @@
       margin: 10px auto;
     }
 
-    h2 {
-      margin: 10px;
-    }
+
 
     .info {
       background-color: #DFEAF1;
@@ -256,7 +257,7 @@
     }
 
     */ .info-title {
-      font-size: 1.6em;
+      font-size: 1.9em;
       margin: 8px;
       text-align: center;
       color: #294860;
@@ -265,8 +266,9 @@
     .info-description {
       font-weight: lighter;
       /* this makes the font a bit less dark */
-      font-size: 1.2em;
+      font-size: 0.8em;
       margin: 6px;
+	  font-family: Futura, Trebuchet MS, Arial, sans-serif; 
     }
   </style>
 </head>
@@ -278,7 +280,7 @@
   <main>
     <div class="sidebar">
       <div class="TOC">
-        <h1>Starters opdrachten</h1>
+        <h2>Starters opdrachten</h2>
         <!-- Below this is a <ol> element. "ol" stands for "ordered list." -->
         <ol>
           <!-- <li> means "list item" -->
@@ -321,7 +323,7 @@
         </ol>
       </div>
       <div class="TOC">
-        <h1>Tweede opdrachten</h1>
+        <h2>Tweede opdrachten</h2>
         <!-- Below this is a <ol> element. "ol" stands for "ordered list." -->
         <ol>
           <!-- <li> means "list item" -->
@@ -364,7 +366,7 @@
         </ol>
       </div>
       <div class="TOC">
-        <h1>Derde opdrachten</h1>
+        <h2>Derde opdrachten</h2>
         <!-- Below this is a <ol> element. "ol" stands for "ordered list." -->
         <ol>
           <!-- <li> means "list item" -->
@@ -407,7 +409,7 @@
         </ol>
       </div>
       <div class="TOC">
-        <h1>Vierde opdrachten</h1>
+        <h2>Vierde opdrachten</h2>
         <!-- Below this is a <ol> element. "ol" stands for "ordered list." -->
         <ol>
           <!-- <li> means "list item" -->
@@ -458,14 +460,12 @@
         Hier kan je de uitleg vinden van opdrachten die je kunt doen.
       </p>
       <div class="info">
-        <h2 id="info-1">Opdrachten uitleg</h2>
+        
         <div class="info" id="info-1-1">
-          <div class="info-title">
-            De wilde start
+          <div class="info-title">De wilde start
           </div>
           <div class="info-description">
-            <p>
-				Kies je startlocatie.
+            <p>Kies je startlocatie.
             </p>
           </div>
         </div>
@@ -475,8 +475,7 @@
           Geen vraag te gek
         </div>
         <div class="info-description">
-            <p>
-				Ontdek de tablet.
+            <p>Ontdek de tablet.
             </p>
         </div>
       </div>
@@ -485,8 +484,7 @@
           Kies je carriere
         </div>
         <div class="info-description">
-          <p>
-           Zoek een vaste baan.
+          <p>Zoek een vaste baan.
             
           </p>
         </div>
@@ -496,8 +494,7 @@
          Nooit geld tekort
         </div>
         <div class="info-description">
-          <p>
-            Zoek een bijbaan.
+          <p> Zoek een bijbaan.
             <br />
           </p>
         </div>
@@ -507,8 +504,7 @@
           Briefgeld is slechts een belofte
         </div>
         <div class="info-description">
-          <p>
-            Pin geld.
+          <p> Pin geld.
             <br />
           </p>
         </div>
@@ -518,8 +514,7 @@
           Veilig rijden
         </div>
         <div class="info-description">
-          <p>
-            Haal de theorie & praktijk examens voor rijbewijs A (motor) of B (auto).
+          <p> Haal de theorie & praktijk examens voor rijbewijs A (motor) of B (auto).
           </p>
         </div>
       </div>
@@ -528,8 +523,7 @@
           Je eerste auto
         </div>
         <div class="info-description">
-          <p>
-           Koop je eerste auto bij de officiele verkoper.
+          <p>Koop je eerste auto bij de officiele verkoper.
           </p>
         </div>
       </div>
@@ -538,8 +532,7 @@
           Nooit tekort
         </div>
         <div class="info-description">
-          <p>
-            Bezoek de 'admin' supermarkt (zichtbaar op je map). Hier kan je producten kopen die je helpen overleven. Voor speciale producten ga je naar andere winkels.
+          <p> Bezoek de 'admin' supermarkt (zichtbaar op je map). Hier kan je producten kopen die je helpen overleven. Voor speciale producten ga je naar andere winkels.
           </p>
         </div>
       </div>
@@ -548,8 +541,7 @@
           Laat de vogels fluiten
         </div>
         <div class="info-description">
-          <p>
-            Verstuur je eerste Tweet via je telefoon.
+          <p> Verstuur je eerste Tweet via je telefoon.
           </p>
         </div>
       </div>
@@ -558,22 +550,20 @@
           Toon je waarde
         </div>
         <div class="info-description">
-          <p>
-            Parkeer je auto op een parkeerplaats.
+          <p> Parkeer je auto op een parkeerplaats.
           </p>
         </div>
       </div>
   
 	 
-      <div class="info">
         <h2 id="info-1">Tweede opdrachtenlijst</h2>
+      <div class="info">
         <div class="info" id="info-2-1">
           <div class="info-title">
             Ik ben het nieuws
           </div>
           <div class="info-description">
-            <p>
-				Verstuur een advertentie bij Weazel Nieuws.
+            <p>Verstuur een advertentie bij Weazel Nieuws.
             </p>
           </div>
         </div>
@@ -583,8 +573,7 @@
           Mysterieuze grond
         </div>
         <div class="info-description">
-            <p>
-				Ga goud zoeken. Dit kan door /prospect te typen op de juiste locatie.
+            <p>Ga goud zoeken. Dit kan door /prospect te typen op de juiste locatie.
             </p>
         </div>
       </div>
@@ -593,8 +582,7 @@
           Verzamelwoede
         </div>
         <div class="info-description">
-          <p>
-           Vind je eerste verzameling. Open je verzamelingen menu via ']'.
+          <p>Vind je eerste verzameling. Open je verzamelingen menu via ']'.
             
           </p>
         </div>
@@ -604,8 +592,7 @@
          Geen sprong te hoog
         </div>
         <div class="info-description">
-          <p>
-            Waag een parachute sprong!
+          <p> Waag een parachute sprong!
             
           </p>
         </div>
@@ -615,8 +602,7 @@
           Niet eten in mijn nieuwe auto
         </div>
         <div class="info-description">
-          <p>
-            Ga langs de Mac Donalds Drive-thru en koop wat.
+          <p> Ga langs de Mac Donalds Drive-thru en koop wat.
           </p>
         </div>
       </div>
@@ -625,8 +611,7 @@
           Ik voel me duizelig
         </div>
         <div class="info-description">
-          <p>
-            Gebruik een neksteun. Verkrijgbaar via de apotheek of bij ambulance personeel.
+          <p> Gebruik een neksteun. Verkrijgbaar via de apotheek of bij ambulance personeel.
 			<br />
 			Druk op F10 om je schade te bekijken.
           </p>
@@ -637,8 +622,7 @@
           Dat ging hard
         </div>
         <div class="info-description">
-          <p>
-            Gebruik een armsteun. Verkrijgbaar via de apotheek of bij ambulance personeel.
+          <p> Gebruik een armsteun. Verkrijgbaar via de apotheek of bij ambulance personeel.
 			<br />
 			Druk op F10 om je schade te bekijken.
           </p>
@@ -649,8 +633,7 @@
           Die was iets te hoog
         </div>
         <div class="info-description">
-          <p>
-            Gebruik een beenspalk. Verkrijgbaar via de apotheek of bij ambulance personeel.
+          <p> Gebruik een beenspalk. Verkrijgbaar via de apotheek of bij ambulance personeel.
 			<br />
 			Druk op F10 om je schade te bekijken.
           </p>
@@ -661,8 +644,7 @@
           Die kwam hard aan
         </div>
         <div class="info-description">
-          <p>
-            Gebruik een lichaamsbandage. Verkrijgbaar via de apotheek of bij ambulance personeel.
+          <p> Gebruik een lichaamsbandage. Verkrijgbaar via de apotheek of bij ambulance personeel.
 			<br />
 			Druk op F10 om je schade te bekijken.
           </p>
@@ -673,22 +655,20 @@
           In het roze met stippen
         </div>
         <div class="info-description">
-          <p>
-            Bezoek de LS Customs en tune je voertuig.
+          <p> Bezoek de LS Customs en tune je voertuig.
           </p>
         </div>
       </div>
 
 
-      <div class="info">
         <h2 id="info-1">Derde opdrachtenlijst</h2>
+      <div class="info">
         <div class="info" id="info-3-1">
           <div class="info-title">
             Je eigen investering
           </div>
           <div class="info-description">
-            <p>
-				Koop een persoonlijke investering. Deze kan je herkennen aan het groene dollar teken zwevend (vaak) op de stoep.
+            <p>Koop een persoonlijke investering. Deze kan je herkennen aan het groene dollar teken zwevend (vaak) op de stoep.
 			<br />
 			Een investering heb je binnen 3 (OOC) weken terug verdient.
 			<br /> Je moet hier ook pallets inkopen. 1 pallet staat voor 1 (OOC) uur. De pallets (ookwel verdiensten per uur) geven ook geld als je offline bent.
@@ -702,8 +682,7 @@
           Je eigen woning
         </div>
         <div class="info-description">
-            <p>
-				Koop je eigen woning.
+            <p>Koop je eigen woning.
 			<br />
 			Je kunt artikelen veilig verbergen in je woning.
             </p>
@@ -714,8 +693,7 @@
           Dit is niet illegaal, toch?
         </div>
         <div class="info-description">
-          <p>
-           Rook een wietje. Je kunt Marijuana gebruiken via je inventaris (F2).
+          <p>Rook een wietje. Je kunt Marijuana gebruiken via je inventaris (F2).
 			<br />
 			Het gebruiken van geluksartikelen verhoogt je geluk status.
             
@@ -727,8 +705,7 @@
          Als het maar veilig gebeurt
         </div>
         <div class="info-description">
-          <p>
-            Haal minimaal 300km/u met een voertuig.
+          <p> Haal minimaal 300km/u met een voertuig.
             <br />
           </p>
         </div>
@@ -738,8 +715,7 @@
           Hole in One
         </div>
         <div class="info-description">
-          <p>
-            Ga eens golfen.
+          <p> Ga eens golfen.
 			<br />
 			Het gebruiken van geluksdiensten verhoogt je geluk status.
             <br />
@@ -751,8 +727,7 @@
           Strike
         </div>
         <div class="info-description">
-          <p>
-            Gooi een strike bij het bowlen.
+          <p> Gooi een strike bij het bowlen.
 			<br />
 			Het gebruiken van geluksdiensten verhoogt je geluk status.
           </p>
@@ -763,8 +738,7 @@
           (18+) Kort maar krachtig
         </div>
         <div class="info-description">
-          <p>
-           Ga opstap met een prostitué.
+          <p>Ga opstap met een prostitué.
 			<br />
 			Het gebruiken van geluksdiensten verhoogt je geluk status.
           </p>
@@ -775,8 +749,7 @@
           (18+) Handjes thuis
         </div>
         <div class="info-description">
-          <p>
-            Bestel een lapdance
+          <p> Bestel een lapdance
 			<br />
 			Het gebruiken van geluksdiensten verhoogt je geluk status.
           </p>
@@ -787,8 +760,7 @@
           Nieuwjaar
         </div>
         <div class="info-description">
-          <p>
-            Steek vuurwerk af.
+          <p> Steek vuurwerk af.
           </p>
         </div>
       </div>
@@ -797,8 +769,7 @@
           Een gelukkig mens telt voor 2
         </div>
         <div class="info-description">
-          <p>
-            Gebruik een dildo.
+          <p> Gebruik een dildo.
 			<br />
 			Het gebruiken van geluksartikelen verhoogt je geluk status.
           </p>
@@ -807,15 +778,14 @@
 
      
 	 
-      <div class="info">
         <h2 id="info-1">Vierde opdrachtenlijst</h2>
+      <div class="info">
         <div class="info" id="info-4-1">
           <div class="info-title">
             Freelance piloot
           </div>
           <div class="info-description">
-            <p>
-				Koop een eigen vliegtuig.
+            <p>Koop een eigen vliegtuig.
             </p>
           </div>
         </div>
@@ -825,8 +795,7 @@
           Wel met een vaarbewijs
         </div>
         <div class="info-description">
-            <p>
-				Koop een eigen boot.
+            <p>Koop een eigen boot.
             </p>
         </div>
       </div>
@@ -835,8 +804,7 @@
           Je eigen bedrijf
         </div>
         <div class="info-description">
-          <p>
-           Koop een eigen supermarkt, apotheek, ICT winkel, bouwmarkt of sexwinkel.
+          <p>Koop een eigen supermarkt, apotheek, ICT winkel, bouwmarkt of sexwinkel.
             
           </p>
         </div>
@@ -846,8 +814,7 @@
 			Of even Apeldoorn bellen
         </div>
         <div class="info-description">
-          <p>
-            Repareer je voertuig.
+          <p> Repareer je voertuig.
             <br />
 			Dit kan bij een AWNB logo op de map. Hier kan je /repareer typen en dit zal je voertuig 100% repareren, maar kost je wel geld.
           </p>
@@ -858,8 +825,7 @@
           Het is mooier van boven
         </div>
         <div class="info-description">
-          <p>
-            Bezoek de toren op het Blokkenpark.
+          <p> Bezoek de toren op het Blokkenpark.
             <br />
           </p>
         </div>
@@ -869,8 +835,7 @@
           
         </div>
         <div class="info-description">
-          <p>
-            Hallo
+          <p> Hallo
           </p>
         </div>
       </div>
@@ -879,8 +844,7 @@
            
         </div>
         <div class="info-description">
-          <p>
-           Hallo
+          <p>Hallo
           </p>
         </div>
       </div>
@@ -889,8 +853,7 @@
           
         </div>
         <div class="info-description">
-          <p>
-            Hallo
+          <p> Hallo
           </p>
         </div>
       </div>
@@ -899,8 +862,7 @@
           
         </div>
         <div class="info-description">
-          <p>
-            Hallo
+          <p> Hallo
           </p>
         </div>
       </div>
@@ -909,8 +871,7 @@
           
         </div>
         <div class="info-description">
-          <p>
-            Hallo
+          <p> Hallo
           </p>
         </div>
       </div>
