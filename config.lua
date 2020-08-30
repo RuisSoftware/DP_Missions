@@ -13,7 +13,7 @@ Config.AantalDerdeOpdrachten 	= {'21:', '22:', '23:', '24:', '25:', '26:', '27:'
 Config.AantalVierdeOpdrachten 	= {'31:', '32:', '33:', '34:', '35:', '36:', '37:', '38:', '39:', '40:'}
 
 Config.StartersOpdrachtenTitel 	= {
-	'De wilde start', -- 
+	'De wilde start', -- Bezoek een kledingwinkel
 	'Geen vraag te gek', -- ontdek de opdrachtenpanel
 	'Kies je carriere', -- baan zoeken
 	'Nooit geld tekort', -- bijbaan zoeken
@@ -29,9 +29,9 @@ Config.TweedeOpdrachtenTitel 	= {
 	'Ik ben het nieuws', -- Verstuur een advertentie
 	'Mysterieuze grond', -- Ga goud zoeken
 	'Verzamelwoede', -- Vind je eerste verzameling
-	'Geen sprong te hoog', -- Ga parachute springen
+	'Geen sprong te hoog', -- Ga parachute springen TIJDELIJK NIET
 	'Niet eten in mijn nieuwe auto', -- Bezoek de MC drive thru
-	'Ik voel me duizelig', -- Gebruik neksteun
+	'Ik voel me duizelig', -- Gebruik neksteun 
 	'Dat ging hard', -- Gebruik armsteun
 	'Die was iets te hoog', -- Gebruik beenspalk
 	'Die kwam hard aan', -- Gebruik lichaamsbandage
@@ -57,11 +57,11 @@ Config.VierdeOpdrachtenTitel 	= {
 	'Je eigen bedrijf', -- Koop een supermarkt, etc
 	'Of even Apeldoorn bellen', -- Repareer een auto
 	'Het is mooier van boven', -- Bezoek blokkenpark toren 
-	'IF dave THEN delete;', 
-	'IF dave THEN delete;', 
-	'IF dave THEN delete;', 
-	'IF dave THEN delete;', 
-	'IF dave THEN delete;'
+	'De tropische smaken', -- Eet tropisch fruit
+	'Wildplassen is verboden', -- Plas tegen het politiebureau NOG NIET
+	'Als het er maar 1tje is', -- Rij je eerste boete
+	'Big boi', -- Haal stertke 10%
+	'Speedy Gonzales' -- Haal auto rijden 10%
 }
 
 -- Aantal KM gelopen/gereden
