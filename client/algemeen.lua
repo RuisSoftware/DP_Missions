@@ -223,7 +223,7 @@ Citizen.CreateThread(function()
         if not IsPedInAnyVehicle(ped, 1) and IsControlJustReleased(1, Config.Toets)  then --G
             openOpdrachtenMenu()
 			--TriggerServerEvent('esx_opdrachten:updateOpdracht12') -- voor de test
-			--TriggerServerEvent('esx_opdrachten:spelerBezoekt') -- voor de test
+			TriggerServerEvent('esx_opdrachten:spelerBezoekt') -- voor de test
         end
         Citizen.Wait(0)
 	end

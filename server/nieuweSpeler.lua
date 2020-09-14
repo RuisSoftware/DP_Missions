@@ -1,5 +1,5 @@
 RegisterNetEvent('esx_opdrachten:spelerBezoekt') -- Deze begint als speler is ingeladen. Word getriggerd via es_extended.
-AddEventHandler('esx_opdrachten:spelerBezoekt', function(source)
+AddEventHandler('esx_opdrachten:spelerBezoekt', function()
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
 	local resultaat = MySQL.Sync.fetchAll('SELECT * FROM opdrachten WHERE identifier = @eigenaar', {
